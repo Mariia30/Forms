@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/jquery.formstyler.css" rel="stylesheet" />
+    <link href="css/jquery.formstyler.theme.css" rel="stylesheet" />
+</head>
+<body>
+<form id="test-form" action="#" method="post">
+    <div>
+        <label for="input-text">Login:</label>
+        <input type="text" name="login" id="input-text" placeholder="Login here" required>
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Password here" required>
+    </div>
+    <div>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email">
+    </div>
+    <div>
+        <label for="url">Site:</label>
+        <input type="url" name="url" id="url">
+    </div>
+    <div>
+        <label for="tel">Telephone:</label>
+        <input type="tel" name="tel" id="tel">
+    </div>
+    <div>
+        <label for="number">Age:</label>
+        <input class="number" type="number" name="number" id="number" min="1" max="99" step="1">
+    </div>
+    <div>
+        <label for="search">Search:</label>
+        <input type="search" name="search" id="search">
+    </div>
+    <div class="file-wrapper">
+        <div>
+            <input type="file" id="input-file">
+            <label for="input-file"></label>
+            <span id="input-file-info"></span>
+        </div>
+    </div>
+    <p>Options</p>
+    <input type="radio" name="radio" id="input-radio-m" value="male"
+           checked>
+    <label for="input-radio-m">Male</label>
+    <input type="radio" name="radio" id="input-radio-f" value="female"
+    >
+    <label for="input-radio-f">Female</label>
+    </div>
+    <div>
+        <p>Options 2</p>
+        <input type="radio" name="radio_2" id="input-radio-y" value="y"
+               checked>
+        <label for="input-radio-y">Yes</label>
+        <input type="radio" name="radio_2" id="input-radio-n" value="n"
+        >
+        <label for="input-radio-n">No</label>
+    </div>
+    <div>
+        <p>Options 3</p>
+        <input type="checkbox" name="check-1" id="input-check-1" value="month"
+               checked required>
+        <label for="input-check-1">Month</label>
+        <input type="checkbox" name="check-2" id="input-check-2" value="week">
+        <label for="input-check-2">Week</label>
+    </div>
+    <div>
+        <input type="hidden" value="smile">
+    </div>
+    <div>
+        <label for="select-mood">Mood:</label>
+        <select name="select" id="select-mood">
+            <option value="1">Good</option>
+            <option value="2">Cheerful</option>
+            <option value="3">Smile</option>
+            <option value="4">Sad</option>
+            <option value="5">Thoughtful</option>
+        </select>
+    </div>
+    <div>
+        <textarea name="textarea" id="text" placeholder="Text here"></textarea>
+    </div>
+    <div>
+        <input type="reset" value="Clear">
+    </div>
+    <div>
+        <input type="submit" value="OK">
+    </div>
+    <div>
+        <button type="submit">
+            <strong>Push me!</strong>
+        </button>
+    </div>
+</form>
+<script src="js/script.js"></script>
+</body>
+</html>

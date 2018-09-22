@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+   <script src="js/jquery.formstyler.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/jquery.formstyler.css" rel="stylesheet" />
+    <link href="css/jquery.formstyler.theme.css" rel="stylesheet" />
+</head>
+
+<body>
+   <form id="test-form" method="get">
+      <div>
+         <label for="input-text">Login:</label>
+         <input type="text" name="login" id="input-text" placeholder="Login here">
+      </div>
+      <div>
+         <label for="input-password">Password:</label>
+         <input type="password" name="pass" id="input-password" placeholder="Password here">
+      </div>
+      <div>
+         <input type="email" name="" id="">
+         <input type="url" name="" id="">
+         <input type="tel" name="" id="">
+         <input type="search" name="" id="">
+         <input type="number" name="" id="" min="0" max="10" step=".2">
+      </div>
+      <div class="file-wrapper">
+         <input type="file" name="file" id="input-file">
+         <label for="input-file">Select the file</label> 
+         <span class="input-file-info">File is not selected</span>
+      </div>
+      <div class="file-wrapper">
+         <input type="file" name="file" id="input-file-2">
+         <label for="input-file-2">Select the file</label> 
+         <span class="input-file-info">File is not selected</span>
+      </div>
+      <div>
+         <p>Options 1</p>
+         <input type="radio" name="radio" id="input-radio-1" value="aaa">
+         <label for="input-radio-1">value 1</label>
+         <input type="radio" name="radio" id="input-radio-2" value="bbb" disabled>
+         <label for="input-radio-2">value 2</label>
+      </div>
+      <div>
+         <p>Options 2</p>
+         <input type="radio" name="radio2" id="input-radio-3" value="xxxx">
+         <label for="input-radio-3">value x</label>
+         <input type="radio" name="radio2" id="input-radio-4" value="yyyy">
+         <label for="input-radio-4">value y</label>
+      </div>
+      <div>
+         <p>Options 3</p>
+         <input type="checkbox" name="check-1" id="input-checkbox-1" value="test" required>
+         <label for="input-checkbox-1">check-1</label>
+         <select>
+            <option value="1">Opt 1</option>
+            <option value="2">Opt 2</option>
+            <option value="3">Opt 3</option>
+         </select>
+      </div>
+      <div>
+         <input type="reset" value="Clear">
+      </div>
+      <div>
+         <textarea name="textarea" id="textarea" placeholder="Text here" disabled>werwrwerw</textarea>
+      </div>
+      <div>
+         <input type="hidden" name="hidden" value="smile">
+         <input type="submit" value="Push me!" disabled>
+         <button type="submit">
+            <strong>Push me!</strong>
+         </button>
+      </div>
+   </form>
+   <script src="js/input-file-multiple.js"></script>
+</body>
+
+</html>
